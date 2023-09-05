@@ -14,8 +14,9 @@ def extract_slides_from_pptx(file_path):
                     for run in paragraph.runs:
                         slide_text.append(run.text)
 
-        slides_text.append('\n'.join(slide_text))
-
+        slides_text.append(slide_text)
+        
+    print(slides_text)
     return slides_text
 
 def find_and_read_ppt_files(root_dir):
@@ -30,4 +31,6 @@ def find_and_read_ppt_files(root_dir):
     return pptx_files
 
 if __name__ == "__main__":
-    pass
+    l = extract_slides_from_pptx("ai-for-private-equity.pptx")
+
+    print(len(l))
