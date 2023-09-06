@@ -65,7 +65,7 @@ def get_args():
 
 if __name__ == "__main__":
     args = get_args()
-    print("\nProvide Output path always, even if it doesn't exist\n")
+    # print("\nProvide Output path always, even if it doesn't exist\n")
 
     try:
         if args.file:
@@ -77,5 +77,3 @@ if __name__ == "__main__":
 
         print("\n",e)
 
-
-# E:\Datanob Projects\Kreate Automation\ppt\Portfolio.pptx
